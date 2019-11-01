@@ -37,7 +37,7 @@
         <version>1.7.0</version>
         <configuration>
           <to>
-            <image>jibsample</image>
+            <image>343104500607.dkr.ecr.ap-northeast-1.amazonaws.com/ark-jibsample:latest</image>
           </to>
         </configuration>
       </plugin>
