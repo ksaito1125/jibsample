@@ -7,10 +7,12 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
+      - ls /root/.m2/*
   build:
     commands:
       - echo Build started on `date`
-      - mvn compile jib:build
+      - mvn compile
+      - mvn package
   post_build:
     commands:
       - echo Build completed on `date`
