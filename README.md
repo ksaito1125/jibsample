@@ -2,36 +2,24 @@
 
 サンプルアプリケーションです。
 
-## ビルド
+## 起動手順
 
-Springアプリケーションは、JARファイルでパッケージされます。
+起動手順は、JARファイルとコンテナの２種類あります。
 
 ### JARファイル
 
-下記のコマンドでビルドします。
+下記のコマンドでビルドし狄道します。
 
 ```
-mvn package
-```
-
-作成されたjarファイルを実行します。
-
-```
-java -jar target/gs-spring-boot-0.1.0.jar
+make run
 ```
 
 ### コンテナ
 
-[Jib](https://github.com/GoogleContainerTools/jib)を使ってDockerイメージにパッケージ化します。
+下記のコマンドで、[Jib](https://github.com/GoogleContainerTools/jib)を使ってDockerイメージをビルドして起動します。
 
 ```
-mvn compile jib:dockerBuild
-```
-
-下記のコマンドで起動します。
-
-```
-docker run -d -p 8080:8080 jibsample
+make up
 ```
 
 ## 動作確認
@@ -47,5 +35,6 @@ $
 ## 参考
 
 [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
+[Jib](https://github.com/GoogleContainerTools/jib)
 
 以上
