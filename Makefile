@@ -20,8 +20,9 @@ up: build
 $(JARFILE):
 	mvn package
 
+jar: $(JARFILE)
 
-run: $(JARFILE)
+run: jar
 	java -jar $<
 
 # Util
