@@ -23,7 +23,7 @@ $(JARFILE):
 jar: $(JARFILE)
 
 run: jar
-	java -jar $<
+	java -jar $(JARFILE)
 
 # Util
 $(ZIPFILE):
