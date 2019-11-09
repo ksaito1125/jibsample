@@ -4,7 +4,7 @@
 
   <groupId>org.springframework</groupId>
   <artifactId>gs-spring-boot</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -26,7 +26,7 @@
   <scm>
     <connection>scm:git:git@github.com:ksaito1125/jibsample.git</connection>
     <!-- <developerConnection>scm:svn:https://127.0.0.1/svn/my-project</developerConnection> -->
-    <tag>gs-spring-boot-0.1.0</tag>
+    <tag>HEAD</tag>
     <!-- <url>http://127.0.0.1/websvn/my-project</url> -->
   </scm>
 
