@@ -10,7 +10,7 @@ pipeline {
       }
       steps {
         sh '''mvn --version
-ls -l $HOME/.m2'''
+ls -l $HOME/.m2 || echo no cache'''
       }
     }
 
