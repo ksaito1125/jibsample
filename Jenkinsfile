@@ -9,8 +9,19 @@ pipeline {
 
       }
       steps {
-        sh '''pwd
-aws'''
+        sh 'type mvn || echo ng'
+      }
+    }
+
+    stage('') {
+      agent {
+        node {
+          label 'my-jenkins-jenkins-slave-kaniko'
+        }
+
+      }
+      steps {
+        sh 'type mvn || echo ng'
       }
     }
 
