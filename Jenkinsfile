@@ -1,7 +1,7 @@
 pipeline {
   agent none
   stages {
-    stage('') {
+    stage('error') {
       agent {
         node {
           label 'my-jenkins-jenkins-slave '
@@ -9,7 +9,10 @@ pipeline {
 
       }
       steps {
-        sh 'ls -l'
+        sh '''ls -l
+type docker
+type git
+type mvnn'''
       }
     }
 
