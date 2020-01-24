@@ -13,10 +13,10 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       agent {
         node {
-          label 'my-jenkins-jenkins-slave-kaniko'
+          label 'my-jenkins-jenkins-slave'
         }
 
       }
