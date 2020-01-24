@@ -9,11 +9,8 @@ pipeline {
 
       }
       steps {
-        sh '''mvn --version
-mvn clean package
-ls -l $HOME/.m2
-ls -l $HOME/.m2/repository
-'''
+        sh '''pwd
+aws'''
       }
     }
 
