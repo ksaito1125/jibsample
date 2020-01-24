@@ -1,7 +1,7 @@
 pipeline {
   agent none
   stages {
-    stage('error') {
+    stage('build') {
       agent {
         node {
           label 'my-jenkins-jenkins-slave '
@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh '''mvn --version
 mvn clean package
-'''
+ls -l $HOME/.m2'''
       }
     }
 
