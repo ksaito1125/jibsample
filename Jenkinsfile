@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'docker:dind'
-    }
-
-  }
+  agent none
   stages {
     stage('error') {
       agent {
@@ -15,9 +10,9 @@ pipeline {
       }
       steps {
         sh '''ls -l
-type docker
-type git
-type mvnn'''
+type docker || echo ng
+type git || echo ng
+type mvn || echo ng'''
       }
     }
 
