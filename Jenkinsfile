@@ -1,10 +1,15 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'default'
+    }
+
+  }
   stages {
     stage('build') {
       agent {
         node {
-          label 'my-jenkins-jenkins-slave '
+          label 'default'
         }
 
       }
@@ -16,7 +21,7 @@ pipeline {
     stage('error') {
       agent {
         node {
-          label 'my-jenkins-jenkins-slave'
+          label 'default'
         }
 
       }
